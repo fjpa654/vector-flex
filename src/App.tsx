@@ -1,7 +1,15 @@
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import Login from './pages/Login'
+import './App.css'
+
 export default function App() {
   return (
-    <div className="h-screen flex items-center justify-center bg-green-700 text-white text-3xl font-bold">
-      Tailwind is working 🎉
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" replace />} />
+        <Route path="/login" element={<Login />} />
+        {/* Future routes can go here, e.g. /dashboard */}
+      </Routes>
+    </Router>
   )
 }

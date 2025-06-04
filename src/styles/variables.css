@@ -1,0 +1,26 @@
+/* src/styles/variables.css */
+
+/* Color Palette */
+:root {
+  --color-primary: #3b82f6;           /* Blue-500 */
+  --color-primary-dark: #1e40af;      /* Blue-800 */
+  --color-secondary: #fbbf24;         /* Yellow-400 */
+  --color-secondary-dark: #b45309;    /* Yellow-700 */
+
+  --color-background-light: #f9fafb;  /* Gray-50 */
+  --color-background-dark: #1f2937;   /* Gray-800 */
+
+  --color-text-light: #111827;        /* Gray-900 */
+  --color-text-dark: #f3f4f6;         /* Gray-100 */
+
+  --border-radius-lg: 0.5rem;         /* 8px */
+  --spacing-base: 1rem;               /* 16px */
+}
+
+/* Dark mode overrides */
+.dark {
+  --color-background-light: #1f2937;  /* Gray-800 */
+  --color-background-dark: #f9fafb;   /* Gray-50 */
+  --color-text-light: #f3f4f6;        /* Gray-100 */
+  --color-text-dark: #111827;         /* Gray-900 */
+}
