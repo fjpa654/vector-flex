@@ -1,20 +1,29 @@
-@import './styles/variables.css';
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root[data-theme='light'] {
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-card-bg: #f4f4f4;
+  --color-accent: #1e40af;
+}
+
+:root[data-theme='dark'] {
+  --color-bg: #000000;
+  --color-text: #ffffff;
+  --color-card-bg: #1a1a1a;
+  --color-accent: #3b82f6;
+}
 
 html,
 body,
 #root {
-  width: 100%;
-  height: 100%;
   margin: 0;
-  padding: 0;
-}
-
-body {
+  padding: 1px; /* <- espacio de 1px en todo el borde */
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: sans-serif;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
