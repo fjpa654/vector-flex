@@ -21,9 +21,12 @@ export default function ThemeToggle() {
     <button
       onClick={toggleTheme}
       aria-label="Toggle theme"
-      className={`w-6 h-6 rounded-full border 
-        ${isDark ? 'bg-white border-white' : 'bg-transparent border-black'} 
-        transition-all duration-300`}
+      className={`
+        fixed top-4 right-4 z-50 w-8 h-8 
+        transition-all duration-300 shadow-md 
+        ${isDark ? 'bg-white' : 'bg-black'}
+      `}
+      style={{ backgroundColor: isDark ? '#fff' : '#000' }} // 🔥 force override
     />
   );
 }

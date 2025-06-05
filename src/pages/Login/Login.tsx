@@ -22,7 +22,7 @@ export default function Login() {
   return (
     <form
       onSubmit={handleLogin}
-      className="w-full max-w-md space-y-6 bg-[--color-card-bg] p-8 border border-[--color-text] text-[--color-text]"
+      className="flex flex-col items-center justify-center w-full max-w-sm space-y-6 bg-[--color-card-bg] p-8 border border-[--color-text] text-[--color-text] shadow-md"
     >
       <Title />
       <TextInput
@@ -40,5 +40,6 @@ export default function Login() {
       <SignInButton />
       {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
     </form>
+
   );
 }
